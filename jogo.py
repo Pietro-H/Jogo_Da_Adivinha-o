@@ -36,5 +36,19 @@ for radada in range (1, totalTentativas +1):
 
     acertou = chute == numeroSecreto
     maior = chute > numeroSecreto
-    menor = chute < numeroSecreto1q 
+    menor = chute < numeroSecreto
+
+    if (acertou):
+        print(f"Você acertou e fez {pontos}!")
+        break
+    else:
+        if(maior):
+            print("Você errou! Seu chute foi maior que o numero secreto")
+        elif(menor):
+            print("Você errou! Seu chute foi menor que o numero secreto")
+
+            pontosperdidos = abs(numeroSecreto - chute)
+            pontos = pontos - pontosperdidos
+
+print("Fim de jogo ! O numero era" ,numeroSecreto)
 
